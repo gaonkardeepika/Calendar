@@ -1,0 +1,110 @@
+<table border="1">
+  <tbody>
+    <tr>
+      <td>
+        <table width="100%">
+          <tbody>
+            <tr>
+              <td align="left">
+                <select name="selMonth" onchange="changeCal()">
+                  <option value="0">January</option>
+                  <option value="1">February</option>
+                  <option value="2">March</option>
+                  <option value="3">April</option>
+                  <option value="4">May</option>
+                  <option value="5">June</option>
+                  <option value="6">July</option>
+                  <option value="7" selected="">August</option>
+                  <option value="8">September</option>
+                  <option value="9">October</option>
+                  <option value="10">November</option>
+                  <option value="11">December</option>
+                </select>
+              </td>
+              <td align="right">
+                <select name="selYear" onchange="changeCal()">
+                  <option value="2013">2013</option>
+                  <option value="2014">2014</option>
+                  <option value="2015" selected="">2015</option>
+                  <option value="2016">2016</option>
+                  <option value="2017">2017</option>
+                </select>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <table border="1">
+          <tbody>
+            <tr>
+              <td align="center"><span class="label">Sun</span></td>
+              <td align="center"><span class="label">Mon</span></td>
+              <td align="center"><span class="label">Tue</span></td>
+              <td align="center"><span class="label">Wed</span></td>
+              <td align="center"><span class="label">Thu</span></td>
+              <td align="center"><span class="label">Fri</span></td>
+              <td align="center"><span class="label">Sat</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp0" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">29</span></td>
+              <td align="center"><span id="sp1" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">30</span></td>
+              <td align="center"><span id="sp2" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">31</span></td>
+              <td align="center"><span id="sp3" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">1</span></td>
+              <td align="center"><span id="sp4" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">2</span></td>
+              <td align="center"><span id="sp5" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">3</span></td>
+              <td align="center"><span id="sp6" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">4</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp7" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">5</span></td>
+              <td align="center"><span id="sp8" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">6</span></td>
+              <td align="center"><span id="sp9" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">7</span></td>
+              <td align="center"><span id="sp10" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">8</span></td>
+              <td align="center"><span id="sp11" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">9</span></td>
+              <td align="center"><span id="sp12" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">10</span></td>
+              <td align="center"><span id="sp13" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">11</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp14" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">12</span></td>
+              <td align="center"><span id="sp15" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">13</span></td>
+              <td align="center"><span id="sp16" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">14</span></td>
+              <td align="center"><span id="sp17" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">15</span></td>
+              <td align="center"><span id="sp18" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">16</span></td>
+              <td align="center"><span id="sp19" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">17</span></td>
+              <td align="center"><span id="sp20" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">18</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp21" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">19</span></td>
+              <td align="center"><span id="sp22" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">20</span></td>
+              <td align="center"><span id="sp23" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">21</span></td>
+              <td align="center"><span id="sp24" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">22</span></td>
+              <td align="center"><span id="sp25" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">23</span></td>
+              <td align="center"><span id="sp26" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">24</span></td>
+              <td align="center"><span id="sp27" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">25</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp28" onclick="changeBg(this.id)" class="c2" style="background-color: rgb(255, 255, 255);">26</span></td>
+              <td align="center"><span id="sp29" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">27</span></td>
+              <td align="center"><span id="sp30" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">28</span></td>
+              <td align="center"><span id="sp31" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">29</span></td>
+              <td align="center"><span id="sp32" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">30</span></td>
+              <td align="center"><span id="sp33" onclick="changeBg(this.id)" class="c1" style="background-color: rgb(255, 255, 255);">31</span></td>
+              <td align="center"><span id="sp34" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">1</span></td>
+            </tr>
+            <tr>
+              <td align="center"><span id="sp35" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">2</span></td>
+              <td align="center"><span id="sp36" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">3</span></td>
+              <td align="center"><span id="sp37" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">4</span></td>
+              <td align="center"><span id="sp38" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">5</span></td>
+              <td align="center"><span id="sp39" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">6</span></td>
+              <td align="center"><span id="sp40" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">7</span></td>
+              <td align="center"><span id="sp41" onclick="changeBg(this.id)" class="c3" style="background-color: rgb(255, 255, 255);">8</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>

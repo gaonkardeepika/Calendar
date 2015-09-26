@@ -1,0 +1,331 @@
+.customCal
+{
+    direction: ltr;
+    text-align: left;
+    color:#444;
+
+}
+.customCal-rtl
+{
+    text-align: right;
+}
+body .customCal
+{
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+}
+.customCal-view-container *,.customCal-view-container :after,.customCal-view-container :before
+{
+    box-sizing: content-box;
+    moz-box-sizing: content-box;
+    webkit-box-sizing: content-box;
+}
+.customCal-view,.customCal-view>table
+{
+    position: relative;
+    z-index: 1;
+}
+.customCal-row .customCal-bg
+{
+    z-index: 1;
+}
+.customCal-event .customCal-bg
+{
+    background: #fff;
+    filter: alpha(opacity=25);
+    opacity: .25;
+    z-index: 1;
+}
+.customCal-time-grid>.customCal-bg
+{
+    z-index: 1;
+}
+.customCal-clear
+{
+    clear: both;
+}
+.customCal-bg,.customCal-bgevent-skeleton,.customCal-helper-skeleton,.customCal-highlight-skeleton
+{
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.customCal-bg
+{
+    bottom: 0;
+}
+.customCal-bg table
+{
+    height: 100%;
+}
+.customCal table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 1em;
+    table-layout: fixed;
+    width: 100%;
+}
+.customCal th
+{
+    text-align: center;
+}
+.customCal td,.customCal th
+{
+    border-style: solid;
+    border-width: 1px;
+    padding: 0;
+    vertical-align: top;
+}
+.customCal td.customCal-today
+{
+    border-style: double;
+}
+.customCal .customCal-row
+{
+    border-style: solid;
+    border-width: 0;
+}
+.customCal-row table
+{
+    border-bottom: 0 hidden transparent;
+    border-left: 0 hidden transparent;
+    border-right: 0 hidden transparent;
+}
+.customCal-row:first-child table
+{
+    border-top: 0 hidden transparent;
+}
+.customCal-row
+{
+    position: relative;
+}
+.customCal-row .customCal-bg
+{
+    z-index: 1;
+}
+.customCal-row .customCal-content-skeleton
+{
+    padding-bottom: 2px;
+    position: relative;
+    z-index: 4;
+}
+.customCal-row .customCal-content-skeleton td,.customCal-row .customCal-helper-skeleton td
+{
+    background: 0 0;
+    border-bottom: 0;
+    border-color: transparent;
+}
+.customCal-row .customCal-content-skeleton tbody td,.customCal-row .customCal-helper-skeleton tbody td
+{
+    border-top: 0;
+}
+.customCal-row table
+{
+    border-bottom: 0 hidden transparent;
+    border-left: 0 hidden transparent;
+    border-right: 0 hidden transparent;
+}
+.customCal-row:first-child table
+{
+    border-top: 0 hidden transparent;
+}
+.customCal-row
+{
+    position: relative;
+}
+.customCal-row .customCal-bg
+{
+    z-index: 1;
+}
+.customCal-row .customCal-bgevent-skeleton,.customCal-row .customCal-highlight-skeleton
+{
+    bottom: 0;
+}
+.customCal-row .customCal-bgevent-skeleton table,.customCal-row .customCal-highlight-skeleton table
+{
+    height: 100%;
+}
+.customCal-row .customCal-bgevent-skeleton td,.customCal-row .customCal-highlight-skeleton td
+{
+    border-color: transparent;
+}
+.customCal-row .customCal-bgevent-skeleton
+{
+    z-index: 2;
+}
+.customCal-row .customCal-highlight-skeleton
+{
+    z-index: 3;
+}
+.customCal-row .customCal-content-skeleton
+{
+    padding-bottom: 2px;
+    position: relative;
+    z-index: 4;
+}
+.customCal-row .customCal-helper-skeleton
+{
+    z-index: 5;
+}
+.customCal-row .customCal-content-skeleton td,.customCal-row .customCal-helper-skeleton td
+{
+    background: 0 0;
+    border-bottom: 0;
+    border-color: transparent;
+}
+.customCal-row .customCal-content-skeleton tbody td,.customCal-row .customCal-helper-skeleton tbody td
+{
+    border-top: 0;
+}
+
+.customCal-unthemed .customCal-divider,.customCal-unthemed .customCal-popover,.customCal-unthemed .customCal-row,.customCal-unthemed tbody,.customCal-unthemed td,.customCal-unthemed th,.customCal-unthemed thead
+{
+    border-color: #ddd;
+}
+
+
+/*Button bar */
+.customCal-toolbar
+{
+    margin-bottom: 1em;
+    text-align: center;
+}
+.customCal-toolbar .customCal-left
+{
+    float: left;
+}
+.customCal-toolbar .customCal-right
+{
+    float: right;
+}
+.customCal-toolbar .customCal-center
+{
+    display: inline-block;
+}
+.customCal .customCal-toolbar>*>*
+{
+    float: left;
+    margin-left: .75em;
+}
+.customCal .customCal-toolbar>*>:first-child
+{
+    margin-left: 0;
+}
+.customCal-toolbar h2
+{
+    margin: 0;
+}
+.customCal-toolbar button
+{
+    position: relative;
+}
+.customCal-toolbar .customCal-state-hover,.customCal-toolbar .ui-state-hover
+{
+    z-index: 2;
+}
+.customCal-toolbar .customCal-state-down
+{
+    z-index: 3;
+}
+.customCal-toolbar .customCal-state-active,.customCal-toolbar .ui-state-active
+{
+    z-index: 4;
+}
+.customCal-toolbar button:focus
+{
+    z-index: 5;
+}
+.customCal-button-group
+{
+    display: inline-block;
+}
+.customCal .customCal-button-group>*
+{
+    float: left;
+    margin: 0 0 0 -1px;
+}
+.customCal .customCal-button-group>:first-child
+{
+    margin-left: 0;
+}
+
+/*left right arrow*/
+.customCal-icon
+{
+    display: inline-block;
+    font-family: "Courier New",Courier,monospace;
+    font-size: 1em;
+    height: 1em;
+    khtml-user-select: none;
+    line-height: 1em;
+    moz-user-select: none;
+    ms-user-select: none;
+    overflow: hidden;
+    text-align: center;
+    user-select: none;
+    webkit-touch-callout: none;
+    webkit-user-select: none;
+    width: 1em;
+}
+.customCal-icon:after
+{
+    margin: 0 -1em;
+    position: relative;
+}
+.customCal-icon-left-single-arrow:after
+{
+    content: "\02039";
+    font-size: 200%;
+    font-weight: 700;
+    left: 3%;
+    top: -7%;
+}
+.customCal-icon-right-single-arrow:after
+{
+    content: "\0203A";
+    font-size: 200%;
+    font-weight: 700;
+    left: -3%;
+    top: -7%;
+}
+.customCal-icon-left-double-arrow:after
+{
+    content: "\000AB";
+    font-size: 160%;
+    top: -7%;
+}
+.customCal-icon-right-double-arrow:after
+{
+    content: "\000BB";
+    font-size: 160%;
+    top: -7%;
+}
+.customCal-icon-left-triangle:after
+{
+    content: "\25C4";
+    font-size: 125%;
+    left: -2%;
+    top: 3%;
+}
+.customCal-icon-right-triangle:after
+{
+    content: "\25BA";
+    font-size: 125%;
+    left: 2%;
+    top: 3%;
+}
+.customCal-icon-down-triangle:after
+{
+    content: "\25BC";
+    font-size: 125%;
+    top: 2%;
+}
+.customCal-icon-x:after
+{
+    content: "\000D7";
+    font-size: 200%;
+    top: 6%;
+}

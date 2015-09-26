@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="moment.js"></script>
+    <script src="calendar.js"></script>
+</head>
+<body>
+    <div class="customCal-toolbar">
+        <div class="customCal-left">
+            <div class="customCal-button-group">
+                <button type="button" onClick="previousMonthWeek()" class="customCal-prev-button customCal-button customCal-state-default customCal-corner-left"><span class="customCal-icon customCal-icon-left-single-arrow"></span>
+                </button>
+                <button type="button" onClick="nextMonthWeek()" class="customCal-next-button customCal-button customCal-state-default customCal-corner-right"><span class="customCal-icon customCal-icon-right-single-arrow"></span>
+                </button>
+            </div>
+            <button type="button" onClick="todayView()" class="customCal-today-button customCal-button customCal-state-default customCal-corner-left customCal-corner-right">today</button>
+        </div>
+        <div class="customCal-right">
+            <div class="customCal-button-group">
+                <button type="button" id="calendar-month-button" onClick="loadMonthView()" class="customCal-month-button customCal-button customCal-state-default customCal-corner-left customCal-state-active">month</button>
+                <button type="button" id="calendar-week-button" onClick="loadWeekView()" class="customCal-agendaWeek-button customCal-button customCal-state-default">week</button>
+                <button type="button" class="customCal-agendaDay-button customCal-button customCal-state-default customCal-corner-right">day</button>
+            </div>
+        </div>
+        <div class="customCal-center">
+            <h2 id="calendar-title"></h2>
+        </div>
+        <div class="customCal-clear"></div>
+    </div>
+    <div id="calendar" class="customCal customCal-rtl customCal-unthemed">
+
+    </div>
+</body>
+</html>
